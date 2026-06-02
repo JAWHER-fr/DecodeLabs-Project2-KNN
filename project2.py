@@ -1,8 +1,3 @@
-# ====================================================================
-# DECODELABS ARTIFICIAL INTELLIGENCE TRACK: PROJECT 2
-# SUPERVISED LEARNING: DATA CLASSIFICATION (IRIS BENCHMARK)
-# ====================================================================
-
 import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -10,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix, classification_report, f1_score
 
-print("==================================================================")
+
 print("🤖 PROJECT 2: INITIALIZING MACHINE LEARNING PIPELINE")
 print("==================================================================")
 
@@ -53,4 +48,3 @@ print(f"\n🎯 Macro F1-Score: {macro_f1:.4f}")
 
 print("\n📝 Detailed Classification Report:")
 print(classification_report(iris.target_names, y_test, target_names=iris.target_names))
-print("==================================================================")
